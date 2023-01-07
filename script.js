@@ -140,3 +140,115 @@ console.log(shiva);
 
 const mobile = bio("mobile", "case");
 console.log(mobile);
+
+// loop
+
+// for loop
+cars = ["toyota", "volkswagan", "mazda", "a", "ab"];
+for (i = 3; i < cars.length; i++) {
+  console.log("cars");
+}
+
+// while loop
+let x = 0;
+while (x < 40) {
+  console.log(x);
+  x++;
+}
+
+// do while loop
+let a = 0;
+do {
+  if (a == 60) {
+    console.log("BREAK");
+  }
+  a++;
+
+  if (a % 2 == 0) {
+    continue;
+  }
+  console.log(a);
+} while (a < 100);
+
+// JS-data manipulation
+
+const f = 4_345_434_235_432;
+console.log(f);
+
+const q = "45.634f";
+console.log(isNaN(q));
+const utr = Number(q);
+const tr = +q;
+
+console.log(utr);
+console.log(tr);
+
+const dent = parseInt(q);
+const ed = parseFloat(q);
+console.log(dent, ed, typeof ed);
+
+// string and index;
+
+const str =
+  'Dented code Academy is located in Rockdale,Sydney and it opens "seven" days a week';
+
+const length = str.length;
+console.log(length);
+
+console.log(str.toUpperCase());
+console.log(str.includes("shiva"));
+console.log(str.split(","));
+console.log(str.trim());
+console.log(str.search("code"));
+console.log(str + " " + "going home");
+console.log(str.charAt(3));
+
+// Array
+
+const fruits = ["apple", "banana", "orange", "tomatoes"];
+
+// fruits.push("mango");
+// console.log(fruits);
+
+// fruits.unshift("tomatoes");
+// console.log(fruits);
+
+// const extr = fruits.shift();
+// console.log(extr);
+
+// const intra = fruits.pop();
+// console.log(intra);
+
+// const splice = fruits.splice(1, 3);
+// console.log(splice);
+
+const old = fruits.toString();
+const of = fruits.indexOf("banana");
+console.log(old);
+console.log(of);
+
+console.log(fruits.join("-").split("-"));
+
+const numb = [23, 1, 45, 2345, 984654];
+console.log(numb.sort((a, b) => b - a));
+
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+
+const newArg = fruits.map((item, i) => {
+  console.log(item, i);
+  return "fresh-" + item.toUpperCase();
+});
+
+console.log(newArg);
+
+const oldArg = fruits.filter((item, i) => item.includes("n"));
+
+console.log(oldArg);
+
+const bank = [223, 54365, 123653, 22, 98700];
+const total = bank.reduce((subttl, item) => {
+  return subttl + item;
+});
+console.log(total);
